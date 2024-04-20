@@ -62,7 +62,6 @@ print(cancer_df["target"])
 #COUNTERPLOT
 
 # Count the target class
-# X la nehmi define karayche ahe nahi tar each input la target mannar
 ax=sns.countplot(x="target",data=cancer_df,hue = 'target')
 
 custom_palette = sns.color_palette("husl", len(cancer_df['mean radius'].unique()))
